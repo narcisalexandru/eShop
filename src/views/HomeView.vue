@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+   <BestProducts></BestProducts>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+
+import Navbar from '@/components/Navbar.vue'
+import BestProducts from '@/components/BestProducts.vue';
+import Product from '@/components/Product.vue';
 
 @Options({
   components: {
-    HelloWorld,
+    Navbar,
   },
 })
 export default class HomeView extends Vue {}
 </script>
+
+
+<style scoped>
+  h1 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+</style>
