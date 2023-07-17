@@ -1,19 +1,17 @@
 <template>
     <div class="about">
       <h1>This is an store page</h1>
+      <ListProduct />
     </div>
   </template>
   
-  <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+<script lang="ts">
+import ListProduct from '@/components/ListProduct.vue';
 
-import Navbar from '@/components/Navbar.vue'
-
-@Options({
+export default{
   components: {
-    Navbar,
+    ListProduct,
   },
-})
-export default class StoreView extends Vue {}
+}
 </script>
 

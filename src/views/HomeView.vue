@@ -1,22 +1,22 @@
 <template>
-   <BestProducts></BestProducts>
+  <h1>HomePage</h1>
+  <ListProduct/>
+  
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-
-import Navbar from '@/components/Navbar.vue'
-import BestProducts from '@/components/BestProducts.vue';
-import Product from '@/components/Product.vue';
+import ListProduct from '@/components/ListProduct.vue';
 
 @Options({
   components: {
-    Navbar,
-  },
+    ListProduct,
+},
 })
-export default class HomeView extends Vue {}
-</script>
 
+export default class HomeView extends Vue {}
+
+</script>
 
 <style scoped>
   h1 {

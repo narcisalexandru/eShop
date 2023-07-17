@@ -3,14 +3,6 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
 
-import Navbar from '@/components/Navbar.vue'
-
-@Options({
-  components: {
-    Navbar,
-  },
-})
-export default class CartView extends Vue {}
+export default {}
 </script>

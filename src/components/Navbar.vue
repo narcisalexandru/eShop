@@ -23,16 +23,7 @@
 <script lang="ts">
   import { Options, Vue } from 'vue-class-component';
   
-  @Options({
-    props: {
-      msg: String
-    }
-  })
-  export default class Navbar extends Vue {
-    msg!: string
-  }
-
-
+  export default class Navbar extends Vue {}
 
 </script>
   
